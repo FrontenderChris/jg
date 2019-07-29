@@ -273,15 +273,10 @@ function airi_footer_credits() {
 	<div class="site-info col-md-12">
 		
 		<?php if ( $credits == '' ) : ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'airi' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://32royalroad.co.nz/', '32royalroad' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'airi' ), 'WordPress' );
+				printf( esc_html__( 'JG © 2019 All rights reserved', '32royalroad' ), 'JG' );
 			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %2$s by %1$s.', 'airi' ), 'aThemes', '<a href="https://athemes.com/theme/airi" rel="nofollow">Airi</a>' );
-			?>
 		<?php else : ?>
 			<?php echo wp_kses_post( $credits ); ?>
 		<?php endif; ?>
