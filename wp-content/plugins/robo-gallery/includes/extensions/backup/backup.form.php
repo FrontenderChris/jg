@@ -12,8 +12,6 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
-
 if ( ! defined( 'WPINC' ) )  die;
 if( !is_admin() ) return ;
 

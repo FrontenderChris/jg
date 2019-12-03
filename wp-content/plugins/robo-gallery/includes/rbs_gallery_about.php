@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 wp_enqueue_style ( 	'robosoft-gallery-about', ROBO_GALLERY_URL.'css/admin/about.css', array( ), ROBO_GALLERY_VERSION );
 

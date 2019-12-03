@@ -13,7 +13,6 @@
 */
 
 if(!defined('WPINC')) die;
-if(!defined("ABSPATH")) exit;
 
 class RoboGalleryUpdate {
 	public $posts = array();

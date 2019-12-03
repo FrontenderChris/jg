@@ -11,7 +11,7 @@
  * @author    WebDevStudios
  * @license   GPL-2.0+
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 class CMB2_Ajax {
 
 	// Whether to hijack the oembed cache system

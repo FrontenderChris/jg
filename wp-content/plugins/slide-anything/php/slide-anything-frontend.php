@@ -250,6 +250,13 @@ function slide_anything_shortcode($atts) {
 			if (isset($metadata['sa_lazy_load_images'])) {
 				$slide_data['lazy_load_images'] = $metadata['sa_lazy_load_images'][0];
 			}
+			$slide_data['ulli_containers'] = '0';
+			if (isset($metadata['sa_ulli_containers'])) {
+				$slide_data['ulli_containers'] = $metadata['sa_ulli_containers'][0];
+				if ($slide_data['ulli_containers'] != '1') {
+					$slide_data['ulli_containers'] = '0';
+				}
+			}
 			// hero slider and slider thumbnails
 			$slide_data['hero_slider'] = '0';
 			$slide_data['thumbs_active'] = '0';
@@ -788,6 +795,10 @@ function slide_anything_shortcode($atts) {
 			if (($sa_pro_version) && ($slide_data['thumbs_active'] == '1')) {
 				$output .= "			thumbs : true,\n";
 				$output .= "			thumbsPrerendered : true,\n";
+			}
+			if ($slide_data['ulli_containers'] == '1') {
+				$output .= "			stageElement : 'ul',\n";
+				$output .= "			itemElement : 'li',\n";
 			}
 			$output .= "			mouseDrag : ".esc_attr($slide_data['mouse_drag']).",\n";
 			$output .= "			touchDrag : ".esc_attr($slide_data['touch_drag'])."\n";

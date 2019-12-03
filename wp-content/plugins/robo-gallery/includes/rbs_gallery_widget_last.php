@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 class rbs_widget_last extends WP_Widget {
 

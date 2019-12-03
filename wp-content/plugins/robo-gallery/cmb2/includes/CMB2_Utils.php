@@ -10,7 +10,7 @@
  * @license   GPL-2.0+
  * @link      http://webdevstudios.com
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 class CMB2_Utils {
 
 	/**

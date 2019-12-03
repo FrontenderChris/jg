@@ -1894,7 +1894,7 @@ function cpt_slider_style_content($post) {
 		echo "<input type='checkbox' id='sa_window_onload' name='sa_window_onload' value='1'/>";
 	}
 	echo "</div>\n";
-
+	
 	// Strip JavaScript from Content
 	$strip_javascript = get_post_meta($post->ID, 'sa_strip_javascript', true);
 	if ($strip_javascript == '') {
@@ -1922,6 +1922,21 @@ function cpt_slider_style_content($post) {
 		echo "<input type='checkbox' id='sa_lazy_load_images' name='sa_lazy_load_images' value='1' checked/>";
 	} else {
 		echo "<input type='checkbox' id='sa_lazy_load_images' name='sa_lazy_load_images' value='1'/>";
+	}
+	echo "</div>\n";
+	
+	// Use UL and LI Containers
+	$ulli_containers = get_post_meta($post->ID, 'sa_ulli_containers', true);
+	if ($ulli_containers == '') {
+		$ulli_containers = '0';
+	}
+	$tooltip = "Use &quot;UL&quot; as the DOM element for &quot;owl-stage&quot; and use &quot;LI&quot; as the DOM elements for &quot;owl-item&quot;.";
+	echo "<div id='sa_window_onload_line'>";
+	echo "<span class='sa_tooltip' title='".$tooltip."'></span><span style='min-width:160px;'>Use UL and LI Containers:</span>";
+	if ($ulli_containers == '1') {
+		echo "<input type='checkbox' id='sa_ulli_containers' name='sa_ulli_containers' value='1' checked/>";
+	} else {
+		echo "<input type='checkbox' id='sa_ulli_containers' name='sa_ulli_containers' value='1'/>";
 	}
 	echo "</div>\n";
 
@@ -2524,6 +2539,11 @@ function cpt_slider_save_postdata() {
 			update_post_meta($post->ID, 'sa_lazy_load_images', '1');
 		} else {
 			update_post_meta($post->ID, 'sa_lazy_load_images', '0');
+		}
+		if (isset($_POST['sa_ulli_containers']) && ($_POST['sa_ulli_containers'] == '1')) {
+			update_post_meta($post->ID, 'sa_ulli_containers', '1');
+		} else {
+			update_post_meta($post->ID, 'sa_ulli_containers', '0');
 		}
 
 		if ($sa_pro_version) {

@@ -12,7 +12,7 @@
  * @property-read array $meta_box
  * @property-read array $updated
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 class CMB2 {
 
 	/**

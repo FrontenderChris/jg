@@ -13,7 +13,6 @@
 */
 
 if(!defined('WPINC'))die;
-if(!defined("ABSPATH"))exit;
 
 class Robo_Gallery_Activator {
 	public static function activate() {

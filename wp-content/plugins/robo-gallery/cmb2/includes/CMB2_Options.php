@@ -15,7 +15,7 @@
  * @package   CMB2
  * @author    WebDevStudios
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 class CMB2_Options {
 	/**
 	 * Array of all CMB2_Option instances

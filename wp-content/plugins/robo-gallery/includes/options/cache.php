@@ -5,7 +5,7 @@
 *      Contact: https://robosoft.co/robogallery/ 
 *      Available only in  https://robosoft.co/robogallery/ 
 */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 $cache_box = new_cmb2_box( array(
     'id'            => ROBO_GALLERY_PREFIX . 'cache_metabox',

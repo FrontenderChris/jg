@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 rbs_gallery_include('category.class.php',  plugin_dir_path( __FILE__ ) );
 new ROBO_GALLERY_CATEGORY_PAGE( ROBO_GALLERY_TYPE_POST );

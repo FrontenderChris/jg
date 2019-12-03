@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 $shortcode_group = new_cmb2_box( array(
     'id'            => ROBO_GALLERY_PREFIX.'shortcode_metabox',

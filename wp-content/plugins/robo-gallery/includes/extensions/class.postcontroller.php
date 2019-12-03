@@ -9,7 +9,7 @@
  * @license url : http://creativecommons.org/licenses/by-sa/3.0/
 */ 
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 if (!isset($wp_rewrite))
 	$wp_rewrite = new WP_Rewrite();

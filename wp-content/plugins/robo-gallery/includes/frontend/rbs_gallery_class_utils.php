@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 if( !ROBO_GALLERY_PRO || !class_exists('roboGalleryParent')){
 	class roboGalleryParent{ public $pro = 0; }

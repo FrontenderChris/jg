@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 
 
@@ -103,6 +103,8 @@ class roboGallery extends roboGalleryUtils{
 
  	public $html = '';
 
+ 	public $defaultConfig = array();
+
 
  	function updateCountView(){
  		if(!$this->id) return ;
@@ -152,6 +154,10 @@ class roboGallery extends roboGalleryUtils{
  		}
 
  		$this->debug = get_option( ROBO_GALLERY_PREFIX.'debugEnable', 0 );
+
+ 		$this->defaultConfig['border'] = array();
+ 		$this->defaultConfig['shadow'] = array();
+ 		$this->defaultConfig['grid'] = array();
  	}
 
  	function customCSS(){ 	return $this->customAssets('css'); 	}
@@ -289,11 +295,6 @@ class roboGallery extends roboGalleryUtils{
 
  			return $debugText.$cached_result;
  		}
-
- 		
-
- 		//$galleryImages = get_post_meta( $this->options_id && $this->real_id ? $this->real_id : $this->id, ROBO_GALLERY_PREFIX.'galleryImages', true );;
- 		//if( !$galleryImages || !is_array( $galleryImages ) || !count($galleryImages) || !(int)$galleryImages[0] ) return '';
 
  		$this->helper->setValue( 'filterContainer',  	'#'.$this->galleryId.'filter', 'string' );
  		$this->helper->setValue( 'loadingContainer',  	'#robo_gallery_loading_'.$this->galleryId, 'string' );

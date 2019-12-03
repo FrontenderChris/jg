@@ -5,7 +5,7 @@
 *      Copyright (c) 2014-2019, Robosoft. All rights reserved.
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 
 function robo_gallery_save_gallery( $post_id, $post, $update ) {

@@ -10,7 +10,7 @@
 
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 
 class Gallery_RoTeam_AddonAction{

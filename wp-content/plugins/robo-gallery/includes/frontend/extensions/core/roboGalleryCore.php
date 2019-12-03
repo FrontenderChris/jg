@@ -14,7 +14,7 @@
 
 
 if ( ! defined( 'WPINC' ) )  die;
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 require_once ROBO_GALLERY_FRONTEND_PATH.'roboGalleryAbstractExtension.php';
 require_once ROBO_GALLERY_FRONTEND_EXT_PATH.'loader/RoboGalleryLoader.php';

@@ -3,7 +3,7 @@ Contributors: simonpedge
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RP7JLGK6VT252
 Tags: slider, carousel, content slider, responsive slider, html slider, owl carousel
 Requires at least: 4.0
-Tested up to: 5.2.2
+Tested up to: 5.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -317,6 +317,12 @@ Adding a SLIDE ANYTHING slider using the WordPress 5.0 'Block Editor' is pretty 
 = 2.3.7 =
 * Added the option to bulk delete slides within the 'Re-Order Slides' page
 
+= 2.3.8 =
+* Added the 'Use UL and LI Containers' checkbox which when checked, 'UL' is used as the DOM element for 'owl-stage' and 'LI' is used as the DOM elements for 'owl-item'
+
+= 2.3.9 =
+* CSS Style changes for some of the WordPress Dashboard input elements (in response to to the WordPress 5.3 update which changed some default Dashboard styling)
+
 == Upgrade Notice ==
 
 = 1.0 =
@@ -536,3 +542,9 @@ Adding a SLIDE ANYTHING slider using the WordPress 5.0 'Block Editor' is pretty 
 
 = 2.3.7 =
 * Added the option to bulk delete slides within the 'Re-Order Slides' page
+
+= 2.3.8 =
+* Added the 'Use UL and LI Containers' checkbox which when checked, 'UL' is used as the DOM element for 'owl-stage' and 'LI' is used as the DOM elements for 'owl-item'
+
+= 2.3.9 =
+* CSS Style changes for some of the WordPress Dashboard input elements (in response to to the WordPress 5.3 update which changed some default Dashboard styling)

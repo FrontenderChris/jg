@@ -3,8 +3,8 @@ Contributors: gallerysupport, robosoft
 Donate link: https://robosoft.co/robogallery
 Tags: gallery, photo gallery, image gallery, wordpress gallery plugin, responsive gallery
 Requires at least: 3.3
-Tested up to: 5.2
-Stable tag: 2.8.25
+Tested up to: 5.3
+Stable tag: 2.8.28
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -180,12 +180,18 @@ When you open settings in list of the options you can find lightbox settings blo
 4. Demo 4
 5. Demo 5
 6. Demo 6
-7. General and size settings
-8. Layout settings
-9. Shadow and border settings
-10. Hover and menu settings
-11. Loading and Polaroid settings
-12. Buttons settings
+7. Demo 7
+8. Demo 8
+9. Demo 9
+10. Demo 10
+11. Demo 11
+12. Demo 12
+13. General and size settings
+14. Layout settings
+15. Shadow and border settings
+16. Hover and menu settings
+17. Loading and Polaroid settings
+18. Buttons settings
 
 == Other Notes ==
 
@@ -202,6 +208,15 @@ Plugin implemented in native Wordpress style. All code implemented based on Word
 If any problem occurs, please contact us.
 
 == Changelog ==
+
+= 2.8.28 =
+*  Tested with Wordpress 5.3
+
+= 2.8.27 =
+*  Abspath fix in plugin paths
+
+= 2.8.26 =
+*  Fixed small bugs, added new code structures
 
 = 2.8.25 =
 *  Modification of the configuration fields, fix of the shortcode
@@ -514,6 +529,15 @@ If any problem occurs, please contact us.
 
 
 == Upgrade Notice ==
+
+= 2.8.28 =
+Tested with Wordpress 5.3
+
+= 2.8.27 =
+Abspath fix in plugin paths
+
+= 2.8.26 =
+Fixed small bugs, added new code structures
 
 = 2.8.25 =
 Modification of the configuration fields, fix of the shortcode

@@ -15,7 +15,7 @@
  * @param  string  $path Path to append
  * @return string        Directory with optional path appended
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 if( !function_exists('cmb2_dir')){
 	function cmb2_dir( $path = '' ) {

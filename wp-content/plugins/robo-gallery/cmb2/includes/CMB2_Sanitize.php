@@ -12,7 +12,7 @@
  *
  * @method string _id()
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 class CMB2_Sanitize {
 
 	/**

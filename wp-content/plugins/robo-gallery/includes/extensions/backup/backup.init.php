@@ -12,7 +12,7 @@
 *      Available only in  https://robosoft.co/robogallery/ 
 */
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 
 if(!function_exists('robo_gallery_backup_submenu_page')){
 	add_action('admin_menu', 'robo_gallery_backup_submenu_page');

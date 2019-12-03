@@ -8,7 +8,7 @@
  * @license   GPL-2.0+
  * @link      http://webdevstudios.com
  */
- if ( ! defined( 'ABSPATH' ) ) exit;
+ if ( ! defined( 'WPINC' ) ) exit;
 if ( ! class_exists( 'CMB2_Bootstrap_206', false ) ) {
 
 	/**

@@ -15,6 +15,15 @@
 	line-height:22px !important;
 	color:crimson !important;
 }
+/* ### USING UL/LI CONTAINERS ### */
+.sa_owl_theme ul.owl-stage {
+	margin:0px !important;
+	padding:0px !important;
+}
+.sa_owl_theme ul.owl-stage li.owl-item {
+	display:block !important;
+	list-style-type:none !important;
+}
 /* ### PAGINATION BUTTONS ### */
 .sa_owl_theme .owl-dots {
 	position:absolute;

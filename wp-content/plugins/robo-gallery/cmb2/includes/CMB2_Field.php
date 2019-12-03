@@ -15,7 +15,7 @@
  * @method mixed fields()
  * @method mixed count()
  */
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'WPINC' ) ) exit;
 class CMB2_Field {
 
 	/**
